@@ -13,14 +13,10 @@
         {% for image in site.images %}
         <article class="thumb">
             
-<!--        <a href="{{site.baseurl}}/assets/images/fulls/{{ image.path | split: '/' | last | split: '.' | first }}.mp4" class="image">
+     <a href="{{site.baseurl}}/assets/images/fulls/{{ image.path | split: '/' | last | split: '.' | first }}.mp4" data-poptrox="iframe" class="image">
             <img src="{{site.baseurl}}/assets/images/thumbs/{{ image.path | split: '/' | last | split: '.' | first }}.png" alt="{{ image.title }}" />
           </a>
--->
-            <video>
-            <a href="{{site.baseurl}}/assets/images/fulls/{{ image.path | split: '/' | last | split: '.' | first }}.mp4" class="image"></video>
-            <img src="{{site.baseurl}}/assets/images/thumbs/{{ image.path | split: '/' | last | split: '.' | first }}.png" alt="{{ image.title }}" />
-          </a>
+
             
           <h2>{{ image.title }}</h2>
           <p>{{ image.caption }}</p>
