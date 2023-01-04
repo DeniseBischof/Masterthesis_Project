@@ -13,7 +13,7 @@
         {% for image in site.images %}
         <article class="thumb">
             
-     <a href="{{site.baseurl}}/assets/images/fulls/{{ image.path | split: '/' | last | split: '.' | first }}.mp4" data-poptrox="iframe" class="image">
+     <a href="{{site.baseurl}}/assets/images/fulls/{{ image.path | split: '/' | last | split: '.' | first }}.mp4" data-data-poptrox="iframe,1920x1080" frameborder="0">
             <img src="{{site.baseurl}}/assets/images/thumbs/{{ image.path | split: '/' | last | split: '.' | first }}.png" alt="{{ image.title }}" />
           </a>
 
